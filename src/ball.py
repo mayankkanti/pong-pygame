@@ -22,12 +22,12 @@ class Ball(pygame.sprite.Sprite):
         if self.rect.left < 0:
             self.rect.center = (400, 300)
             self.velocity = [5, 5]
-            increment_score1()
+            increment_score2()
             self.reset_timer = 3000
         if self.rect.right > 800:
             self.rect.center = (400, 300)
             self.velocity = [-5, -5]
-            increment_score2()
+            increment_score1()
             self.reset_timer = 3000
     def update(self):
         if self.reset_timer > 0:
